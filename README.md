@@ -2,7 +2,7 @@
 
 
 
-\*\*Mrs Bakery\*\* is a fully responsive website for an online bakery to showcase products and streamline customer engagement.  
+\Mrs Bakery is a fully responsive website for an online bakery to showcase products and streamline customer engagement.  
 
 
 
