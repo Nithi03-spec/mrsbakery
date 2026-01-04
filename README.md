@@ -38,13 +38,13 @@ Mrs Bakery is a fully responsive website for an online bakery to showcase produc
 
 C:.
 
-│   admin.html
+│   index.html
 
 │   cart.html
 
 │   cart.js
 
-│   index.html
+│   index.js
 
 │   menu.html
 
