@@ -422,58 +422,130 @@ aside ul li {
     }
 }
 
-/* General Styling for the Checkout Page */
-#checkout {
-    background:white;
+/* Checkout Buttons Container */
+#checkout-buttons {
+    background: white;
     max-width: 600px;
     margin: 50px auto;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    
 }
 
-#checkout h3 {
+/* Checkout Heading */
+#checkout-buttons h3 {
     font-size: 3.5rem;
-    color:saddlebrown;
+    color: saddlebrown;
     margin-bottom: 20px;
 }
 
-#checkout p {
+/* Checkout Description / Total */
+#checkout-buttons p {
     font-size: 2rem;
     margin-bottom: 30px;
-    color:#a0522d;
+    color: #a0522d;
 }
 
-/* Payment Buttons Styling */
-.payment-options {
+/* Payment Buttons Container */
+#checkout-buttons .payment-options {
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap; /* Wrap buttons on smaller screens */
 }
 
-.payment-options a {
-    text-decoration: none;
-}
-
-button {
+/* Individual Buttons */
+#checkout-buttons button {
     padding: 15px 30px;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    color:white;
+    color: white;
     transition: background-color 0.3s ease;
 }
 
-.whatsapp-btn {
+/* WhatsApp Button */
+#checkout-buttons #whatsapp-checkout {
     background-color: #128C7E;
 }
 
-.whatsapp-btn:hover {
-    background-color: #128C7E;
+#checkout-buttons #whatsapp-checkout:hover {
+    background-color: #075E54;
 }
 
+/* Google Pay Button */
+#checkout-buttons #gpay-checkout {
+    background-color: #4285F4;
+}
 
+#checkout-buttons #gpay-checkout:hover {
+    background-color: #3367D6;
+}
+
+/* Responsive for mobile */
+@media (max-width: 480px) {
+    #checkout-buttons .payment-options {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #checkout-buttons button {
+        width: 100%;
+    }
+}
+
+/* Gallery Container */
+#gallery {
+      text-align: center;
+      padding: 20px;
+    }
+
+    #gallery h3 {
+      font-size: 2rem;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+
+    .slideshow-container {
+      position: relative;
+      max-width: 600px;
+      margin: auto;
+      background-color: #b1a1a1;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+    }
+
+    .slideshow-container img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .prev, .next {
+      position: absolute;
+      top: 50%;
+      padding: 16px;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 18px;
+      transform: translateY(-50%);
+    }
+
+    .prev {
+      left: 0;
+    }
+
+    .next {
+      right: 0;
+    }
+
+    .prev:hover, .next:hover {
+      background-color: rgba(0, 0, 0, 0.7);
+    }
 

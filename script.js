@@ -80,6 +80,12 @@ function showCategory(category) {
     });
 }
 
+function scrollToMenu() {
+    const menuSection = document.getElementById("menu-items");
+    if(menuSection) {
+        menuSection.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+}
 
 // Default: Show Cakes on Load
 document.addEventListener("DOMContentLoaded", () => {
